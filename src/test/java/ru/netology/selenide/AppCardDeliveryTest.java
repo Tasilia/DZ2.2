@@ -26,7 +26,7 @@ public class AppCardDeliveryTest {
     void testSuccessMessage() {
         $x("//*[@placeholder='Город']").setValue("Москва");
         String planningDate = generateDate(3);
-        $x("//*[@placeholder='Дата встречи']").sendKeys(Keys.chord(Keys.COMMAND, "A"),
+        $x("//*[@placeholder='Дата встречи']").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME),
                 Keys.BACK_SPACE);
         $x("//*[@placeholder='Дата встречи']").setValue(planningDate);
         $x("//*[@name='name']").setValue("Юрий Гагарин");
